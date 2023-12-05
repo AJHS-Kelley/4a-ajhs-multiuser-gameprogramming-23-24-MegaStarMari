@@ -62,7 +62,10 @@ namespace ExampleGameMethods
             string userInput = Console.ReadLine();
             
             // Loop until valid command is entered
-            while (checking == true){
+            while (checking == true) {
+            // StartsWith(string) returns true or false 
+            // myString.StartsWith('c'); 
+            // .ToLower() and .ToUpper() can be used to make the answer string all one case. 
             if (userInput == "close door" || userInput == "close") {
                 Console.WriteLine("Door has closed.\n");
                 doorClosed = true;
