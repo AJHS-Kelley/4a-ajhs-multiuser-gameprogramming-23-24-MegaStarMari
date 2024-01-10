@@ -37,6 +37,32 @@ namespace ReviewProject
             // Single character, SINGLE QUOTES ' '
             // 2 Bytes
             char charChar = 'F';
+
+            // Type Casting: changing one data type to another
+            // IMPLICIT: happens auto when going smaller to larger
+            // char -> int -> long -> float -> double
+
+            int funnyInt = 9;
+            double myDouble = funnyInt;
+            Console.WriteLine(myDouble);
+
+            // EXPLICIT: Must be done manually when going larger to smaller
+            // double -> float -> long -> int -> char
+            double doubleTwo = 5.543467834656D;
+            int intTwo = (int) doubleTwo;
+            Console.WriteLine(doubleTwo);
+            Console.WriteLine(intTwo);
+
+            // Conversion Methods
+            Convert.ToString(funnyInt);
+            Convert.ToDouble(number);
+            Convert.ToInt32(doubleTwo); //int
+            Convert.ToInt64(myDouble); //long
+
+            Console.WriteLine(funnyInt);
+            Console.WriteLine(number);
+            Console.WriteLine(doubleTwo);
+            Console.WriteLine(myDouble);
         }
     }
 }
